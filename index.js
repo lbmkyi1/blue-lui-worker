@@ -1178,7 +1178,7 @@ img {
                     <div class="pub-content">
                         <h4>Nuermila, Y., ..., <strong>Lui, Y.L.</strong>, et al. (2025). Pathogenicity of Mediator Complex Subunit 27 (MED27) in a Neurodevelopmental Disorder with Cerebellar Atrophy.</h4>
                         <p class="pub-journal"><em>Advanced Science</em></p>
-                        <a href="#" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/41017421/" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
                     </div>
                 </div>
                 <div class="publication-card">
@@ -1186,7 +1186,7 @@ img {
                     <div class="pub-content">
                         <h4>Lee, L. K. C., ..., <strong>Lui, Y.L.</strong>, et al. (2025). Small gold nanoparticles alleviate Huntington's disease...</h4>
                         <p class="pub-journal"><em>ACS Nano</em></p>
-                        <a href="#" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/41429604/" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
                     </div>
                 </div>
                 <div class="publication-card">
@@ -1194,7 +1194,7 @@ img {
                     <div class="pub-content">
                         <h4>Chen, Z., ..., <strong>Lui, Y.L.</strong>, et al. (2023). Combination of untargeted and targeted proteomics for secretome analysis of L-WRN cells.</h4>
                         <p class="pub-journal"><em>Analytical and Bioanalytical Chemistry</em></p>
-                        <a href="#" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/36656349/" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
                     </div>
                 </div>
                 <div class="publication-note">
