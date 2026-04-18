@@ -377,10 +377,14 @@ img {
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-profile-carousel img.active {
     opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
 }
 
 .hero-scroll {
