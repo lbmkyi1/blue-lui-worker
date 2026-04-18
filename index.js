@@ -957,10 +957,23 @@ img {
     .nav-menu.active {
         transform: translateY(0);
         pointer-events: auto;
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
     }
 
     .nav-toggle {
         display: block;
+        padding: 0.5rem;
+        position: relative;
+        z-index: 1001;
+        min-width: 44px;
+        min-height: 44px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .nav-toggle i {
+        pointer-events: none;
     }
 
     .hero-title {
@@ -1399,12 +1412,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
 
-    navToggle.addEventListener('click', () => {
+    function toggleMenu() {
         navMenu.classList.toggle('active');
         const icon = navToggle.querySelector('i');
         icon.classList.toggle('fa-bars');
         icon.classList.toggle('fa-times');
+    }
+    
+    navToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMenu();
     });
+    
+    navToggle.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMenu();
+    }, { passive: false });
 
     // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-link').forEach(link => {
