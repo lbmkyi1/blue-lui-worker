@@ -1273,7 +1273,7 @@ img {
                             <i class="fas fa-envelope"></i>
                             <span>blueluiyl@link.cuhk.edu.hk</span>
                         </a>
-                        <a href="#" class="contact-link" target="_blank">
+                        <a href="https://www.linkedin.com/in/blue-lui-a30b4315a" class="contact-link" target="_blank">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
