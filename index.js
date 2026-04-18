@@ -193,6 +193,11 @@ img {
     font-size: 1.5rem;
     color: var(--primary);
     cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1001;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 /* ============================================
@@ -945,11 +950,13 @@ img {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transform: translateY(-150%);
         transition: transform 0.3s ease;
-        z-index: 999;
+        z-index: 1001;
+        pointer-events: none;
     }
 
     .nav-menu.active {
         transform: translateY(0);
+        pointer-events: auto;
     }
 
     .nav-toggle {
@@ -958,6 +965,14 @@ img {
 
     .hero-title {
         font-size: 2.8rem;
+    }
+
+    .hero {
+        padding-bottom: 6rem;
+    }
+
+    .hero-scroll {
+        bottom: 1rem;
     }
 
     .hero-tagline {
