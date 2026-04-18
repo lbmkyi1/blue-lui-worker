@@ -1549,19 +1549,12 @@ async function sendEmail(name, email, message) {
         from: 'Blue Lui Website <onboarding@resend.dev>',
         to: ['lbmkyi1@gmail.com'],
         subject: 'New Contact Form Message from ' + name,
-        html: `<h2>New message from your portfolio website</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <p style="white-space:pre-wrap">${message.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>`,
-        text: `Name: ${name}
-Email: ${email}
-
-Message:
-${message}`
+        text: 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message
       })
     });
-    return res.ok;
+    const responseBody = await res.json().catch(() => ({}));
+    console.log('Resend response:', JSON.stringify(responseBody));
+    return res.ok && responseBody.id ? responseBody.id : false;
   } catch (e) {
     console.error('Email send failed:', e);
     return false;
