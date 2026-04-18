@@ -20,8 +20,8 @@ const html = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blue Lui (LUI Ying Lam) - PhD Researcher in Neurodevelopment at CUHK. CRISPR & Stem Cell Biologist | Scientific Illustrator">
-    <meta name="keywords" content="Blue Lui, LUI Ying Lam, CUHK, PhD, Neurodevelopment, CRISPR, Stem Cell, Scientific Illustration">
+    <meta name="description" content="Blue Lui (LUI Ying Lam) - PhD Researcher in Neurodevelopment at CUHK. Mouse Disease Model | Scientific Illustrator">
+    <meta name="keywords" content="Blue Lui, LUI Ying Lam, CUHK, PhD, Neurodevelopment, Mouse Disease Model, Scientific Illustration">
     <meta name="author" content="Blue Lui">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Blue Lui | PhD Researcher in Neurodevelopment">
@@ -1062,7 +1062,7 @@ img {
                     <p class="hero-tagline" data-en="Decoding the Cerebellum. Designing the Future." data-zh="解碼小腦奧秘，繪畫科學未來。">Decoding the Cerebellum. Designing the Future.</p>
                     <p class="hero-role">
                         <span data-en="PhD Researcher in Neurodevelopment" data-zh="神經發展學博士研究員">PhD Researcher in Neurodevelopment</span> |
-                        <span data-en="CRISPR & Stem Cell Biologist" data-zh="CRISPR 與幹細胞生物學家">CRISPR & Stem Cell Biologist</span> |
+                        <span data-en="Mouse Disease Model" data-zh="小鼠疾病模型">Mouse Disease Model</span> |
                         <span data-en="Scientific Illustrator" data-zh="科學插畫師">Scientific Illustrator</span>
                     </p>
                     <div class="hero-buttons">
@@ -1098,8 +1098,8 @@ img {
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-en="I am a final-year PhD Candidate at The Chinese University of Hong Kong (CUHK), specializing in Cell and Molecular Biology. My research focuses on cerebellar ataxia and Purkinje cell development, utilizing mouse models and CRISPR gene editing technologies." data-zh="我現為香港中文大學（CUHK）細胞與分子生物學博士候選人，正處於畢業前的最後階段。我的研究專注於小腦萎縮症和浦肯野細胞的發育，利用小鼠模型和 CRISPR 基因編輯技術進行探索。">
-                        I am a final-year PhD Candidate at The Chinese University of Hong Kong (CUHK), specializing in Cell and Molecular Biology. My research focuses on cerebellar ataxia and Purkinje cell development, utilizing mouse models and CRISPR gene editing technologies.
+                    <p data-en="I am a final-year PhD Candidate at The Chinese University of Hong Kong (CUHK), specializing in Cell and Molecular Biology. My research focuses on cerebellar ataxia and Purkinje cell development, utilizing mouse models to study disease mechanisms." data-zh="我現為香港中文大學（CUHK）細胞與分子生物學博士候選人，正處於畢業前的最後階段。我的研究專注於小腦萎縮症和浦肯野細胞的發育，利用小鼠模型研究疾病機制。">
+                        I am a final-year PhD Candidate at The Chinese University of Hong Kong (CUHK), specializing in Cell and Molecular Biology. My research focuses on cerebellar ataxia and Purkinje cell development, utilizing mouse models to study disease mechanisms.
                     </p>
                     <p data-en="Beyond the lab bench, I am passionate about bridging the gap between complex science and visual communication. I believe that beautiful, accurate scientific illustrations can make research accessible to everyone." data-zh="除了實驗室的工作，我熱衷於搭建複雜科學與視覺傳播之間的橋樑。我相信，精美而準確的科學插畫能讓研究變得人人可及。">
                         Beyond the lab bench, I am passionate about bridging the gap between complex science and visual communication. I believe that beautiful, accurate scientific illustrations can make research accessible to everyone.
@@ -1107,8 +1107,8 @@ img {
                     <div class="about-tags">
                         <span class="tag">Neurodevelopment</span>
                         <span class="tag">Cerebellar Disease</span>
-                        <span class="tag">CRISPR</span>
-                        <span class="tag">Stem Cell Biology</span>
+                        <span class="tag">Mouse Models</span>
+                        <span class="tag">Disease Modeling</span>
                         <span class="tag">Scientific Illustration</span>
                     </div>
                 </div>
@@ -1129,7 +1129,7 @@ img {
                     <ul>
                         <li data-en="Investigating Yy1-regulated molecular pathways in Purkinje cell development" data-zh="探究 Yy1 調控的浦肯野細胞發育分子路徑">Investigating Yy1-regulated molecular pathways in Purkinje cell development</li>
                         <li data-en="In vivo and in vitro neuronal assays" data-zh="活體與離體神經元實驗">In vivo and in vitro neuronal assays</li>
-                        <li data-en="CRISPR-mediated gene editing in neuronal systems" data-zh="神經系統中的 CRISPR 基因編輯">CRISPR-mediated gene editing in neuronal systems</li>
+                        <li data-en="Mouse disease model generation and phenotyping" data-zh="小鼠疾病模型建立與表型分析">Mouse disease model generation and phenotyping</li>
                         <li data-en="iPSC-derived neuronal differentiation and disease modeling" data-zh="iPSC 衍生神經元分化與疾病建模">iPSC-derived neuronal differentiation and disease modeling</li>
                     </ul>
                 </div>
@@ -1137,7 +1137,6 @@ img {
                     <div class="skill-category">
                         <h4><i class="fas fa-dna"></i> <span data-en="Molecular Biology" data-zh="分子生物學">Molecular Biology</span></h4>
                         <div class="skill-tags">
-                            <span class="skill-tag">CRISPR</span>
                             <span class="skill-tag">iPSC Culture</span>
                             <span class="skill-tag">Molecular Cloning</span>
                             <span class="skill-tag">Western Blot</span>
@@ -1159,7 +1158,6 @@ img {
                             <span class="skill-tag">Immunofluorescence</span>
                             <span class="skill-tag">Confocal Microscopy</span>
                             <span class="skill-tag">Super-resolution</span>
-                            <span class="skill-tag">Cryo-EM/ET</span>
                         </div>
                     </div>
                 </div>
