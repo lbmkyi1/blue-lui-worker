@@ -1542,7 +1542,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 throw new Error('Failed');
             }
         } catch (err) {
-            btn.textContent = curr        } catch (err) {
             btn.textContent = currentLang === 'en' ? 'Error, please try again' : '錯誤，請重試';
             btn.style.background = '#e74c3c';
         }
