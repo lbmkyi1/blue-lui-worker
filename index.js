@@ -1485,14 +1485,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 throw new Error('Failed');
             }
         } catch (err) {
-            btn.textContent = currentLang === 'en' ? 'Error, try email' : '錯誤，請用電郵';
+            btn.textContent = curr        } catch (err) {
+            btn.textContent = currentLang === 'en' ? 'Error, please try again' : '錯誤，請重試';
             btn.style.background = '#e74c3c';
-            // Fallback to mailto
-            setTimeout(() => {
-                const subject = encodeURIComponent('Message from ' + name + ' - Blue Lui Website');
-                const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\nMessage:\\n' + message);
-                window.location.href = 'mailto:blueluiyl@link.cuhk.edu.hk?subject=' + subject + '&body=' + body;
-            }, 1500);
         }
         
         setTimeout(() => {
@@ -1541,6 +1536,38 @@ async function initDB(db) {
   `).run();
 }
 
+// Send email via Resend
+async function sendEmail(name, email, message) {
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer re_emuqc6GX_DemNSWptQFwmooqA4orNQgTJ'
+      },
+      body: JSON.stringify({
+        from: 'Blue Lui Website <onboarding@resend.dev>',
+        to: ['blueluiyl@link.cuhk.edu.hk'],
+        subject: 'New Contact Form Message from ' + name,
+        html: `<h2>New message from your portfolio website</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p style="white-space:pre-wrap">${message.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>`,
+        text: `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`
+      })
+    });
+    return res.ok;
+  } catch (e) {
+    console.error('Email send failed:', e);
+    return false;
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -1567,7 +1594,10 @@ export default {
           'INSERT INTO contact_messages (name, email, message) VALUES (?, ?, ?)'
         ).bind(name, email, message).run();
         
-        return jsonResponse({ success: true, message: 'Message saved' });
+        // Send email notification
+        const emailSent = await sendEmail(name, email, message);
+        
+        return jsonResponse({ success: true, message: 'Message saved', emailSent });
       } catch (e) {
         return jsonResponse({ error: e.message }, 500);
       }
