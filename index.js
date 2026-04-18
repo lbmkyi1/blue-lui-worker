@@ -1598,12 +1598,12 @@ export default {
       return new Response(sitemap, { headers: { 'Content-Type': 'application/xml' } });
     }
     
-    // favicon.ico - Safari prefers this path
+    // favicon.ico - Safari requires real ICO format
     if (path === '/favicon.ico') {
-      const faviconPng = Uint8Array.from(atob('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAABH0lEQVR4nGPUjm5hoCVgoqnpDKMWEAFG42AEBBELVtG1bSnqcuJw7s/ff24/fjVx1YHjV+5DRJY1JjAwMETVLyDTAgYGhkMX7mT1rAT5kZFRTIi3Jt5jWkm4b9mMJ68+UDmI/v3//+Ltp4mrD7CyMNsbqNIqDliYQSq//fhFqgUshJ3AyCglyl8U4fTszcddp65TzQI7A5UrS6qRRToW7/5KRR/AI5mBgYGfh9PHSqc81pWFmXHBtpPUj4OPX74v3XV6z+kbsR5mNMxoz15/FBXgZWSkmQVqcmJ3n735/58GFnBzsMV5mlvqKM1Yf5gmqejHr9+3H78umrR29+kbcAV6ytJoyWzVvnNN87ajmcM42qoY/hUO06gFhMDQDyIAeUxjzjMX+aUAAAAASUVORK5CYII='), c => c.charCodeAt(0));
-      return new Response(faviconPng, {
+      const faviconIco = Uint8Array.from(atob('AAABAAIAEBAAAAAAIABqAgAAJgAAACAgAAAAACAAwAEAAJACAACJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAIxSURBVHichVO/a1RBEP5mdu/e/UggKWIlWIjgeUWwCahooRCRoEkTSLTQSuythCAiwX/AP0FQQRAVRC1E0MIoilgkwRAQVIKJF3PJ5X6+tzsyq7mcRuPA7tt9O983szPfEgDsG7t6ykTRHe8SAxGD7YzIsbHONZujM7cvP6DC6clhY80tiGTE++CyLQEgxKxEDZe4cWsM34MXiHcCUuvwlF9Bdd2RgzgnxCarWBuiigSwfuLEw3mBYUI6ZcOR7pk7mIOvEwiRbf8AkLIGO3q7kcukUak18HV5DVHahn2zFXdmEUA6s06GGWvVOkaP7sels8cxUNiFi+PHMHKkX7lx7cJJ5LIRnPdbCsQbC02zKxvh2ds5XLl+Fzcev8bgwN5Ans2k/llZ22YioNFKMDhQgDWMoQNFPHw5jWYch2LK/whEAGMIc58W8fTNByx+r2DoYBHP380jSRwsM4xhMFHIdssV1DTy56UypqY/4sX7efT1dCGfScOLoLxew8paDZVaE3+/AhOq9RYO9+/GxLkT2LOzD09ezeLLt3KozfnhQ+GKpfI6Hk3NtAmoeGYy5BPaaBi93bnQNiVbKJWRshbd+Qg9+WzoSDNOsLRS+SMDEVENxonDQmm1LaQonQpCWq3UsbxaDVE0U9XLz6oR2aBrAamUlSSd2nxLCg5RLMN2lEu8qJRJe8vO+REw1ckEYMBsjE2i34YEX6a6Ynn25sR934rHiE0MovActzUir76KUewPDWwF9KCMKosAAAAASUVORK5CYIKJUE5HDQoaCgAAAA1JSERSAAAAIAAAACAIBgAAAHN6evQAAAGHSURBVHicY2RAA9rRLf8ZaAiuLq1hROYz0dNybHYw0dNybHYx0dtydEcwDoTlONPAQACmAbF11AGDKQpY8EmubUthUJcTRxH7+fsPw+3HrxgmrjrAcPzKfbj4ssYEMB1Vv4B6DgCBQxfuMGT1rASzmRgZGcSEeBlq4j0YppWEM/iWzWB48uoDA92i4N///wwv3n5imLj6AAMrCzODvYEqRZaT7AAYYGGGaPv24xfFDmAhRTEoCqRE+RmKIpwYnr35yLDr1HXaO8DOQIXhypJqDPGOxbsZvtIjBA4hJUIQ4OfhZPCx0mEoj3VlYGFmZFiw7SR908DHL98Zlu46zbDn9A2GWA8ziiwnywEw8Oz1RwZRAV4GRsYBcoCanBjD3WdvGP7/p7MDuDnYGOI8zRksdZQYZqw/TP9c8OPXb4bbj18zFE1ay7D79A0UtXrK0lhzzKp95xia5m3Haj7jaIuIYYAB06gDGAY6Cq6i9dXoCUB2g0NgIBwBs5MJXYCelqM4gF6OQLcDANbthblQt59fAAAAAElFTkSuQmCC'), c => c.charCodeAt(0));
+      return new Response(faviconIco, {
         headers: {
-          'Content-Type': 'image/png',
+          'Content-Type': 'image/x-icon',
           'Cache-Control': 'no-cache, max-age=0'
         }
       });
