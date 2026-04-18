@@ -1281,10 +1281,6 @@ img {
                             <i class="fab fa-researchgate"></i>
                             <span>ResearchGate</span>
                         </a>
-                        <a href="#" class="contact-link" target="_blank">
-                            <i class="fas fa-id-card"></i>
-                            <span>ORCID</span>
-                        </a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
