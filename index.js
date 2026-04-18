@@ -1547,7 +1547,7 @@ async function sendEmail(name, email, message) {
       },
       body: JSON.stringify({
         from: 'Blue Lui Website <onboarding@resend.dev>',
-        to: ['blueluiyl@link.cuhk.edu.hk'],
+        to: ['lbmkyi1@gmail.com'],
         subject: 'New Contact Form Message from ' + name,
         html: `<h2>New message from your portfolio website</h2>
           <p><strong>Name:</strong> ${name}</p>
