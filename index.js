@@ -1397,20 +1397,33 @@ document.addEventListener('DOMContentLoaded', function() {
             zhSpan.style.color = 'var(--primary)';
         }
 
-        localStorage.setItem('bluelui-lang', lang);
+        try {
+            localStorage.setItem('bluelui-lang', lang);
+        } catch (e) {
+            console.log('localStorage not available');
+        }
     }
 
     // Initialize language from localStorage or default to EN
-    const savedLang = localStorage.getItem('bluelui-lang');
-    if (savedLang) {
-        setLanguage(savedLang);
-    } else {
-        setLanguage('en');
+    let savedLang = 'en';
+    try {
+        savedLang = localStorage.getItem('bluelui-lang') || 'en';
+    } catch (e) {
+        console.log('localStorage not available');
     }
+    setLanguage(savedLang);
 
-    langToggle.addEventListener('click', () => {
+    langToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         setLanguage(currentLang === 'en' ? 'zh' : 'en');
     });
+    
+    langToggle.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setLanguage(currentLang === 'en' ? 'zh' : 'en');
+    }, { passive: false });
 
     // Mobile Navigation Toggle
     const navToggle = document.getElementById('navToggle');
