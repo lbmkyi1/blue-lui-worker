@@ -20,8 +20,8 @@ const html = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blue Lui (LUI Ying Lam) - PhD Researcher in Neurodevelopment at CUHK. Mouse Disease Model | Scientific Illustrator">
-    <meta name="keywords" content="Blue Lui, LUI Ying Lam, CUHK, PhD, Neurodevelopment, Mouse Disease Model, Scientific Illustration">
+    <meta name="description" content="Blue Lui - PhD Researcher in Neurodevelopment at CUHK. Mouse Disease Model | Scientific Illustrator">
+    <meta name="keywords" content="Blue Lui, CUHK, PhD, Neurodevelopment, Mouse Disease Model, Scientific Illustration">
     <meta name="author" content="Blue Lui">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Blue Lui | PhD Researcher in Neurodevelopment">
@@ -1090,7 +1090,7 @@ img {
                 <div class="hero-text">
                     <p class="hero-greeting" data-en="Hello, I'm" data-zh="你好，我是">Hello, I'm</p>
                     <h1 class="hero-title">Blue Lui</h1>
-                    <p class="hero-subtitle" data-en="(LUI Ying Lam)" data-zh="(呂映霖)">(LUI Ying Lam)</p>
+                    <p class="hero-subtitle" data-en="PhD Researcher" data-zh="博士研究員">PhD Researcher</p>
                     <p class="hero-tagline" data-en="Decoding the Cerebellum. Designing the Future." data-zh="解碼小腦奧秘，繪畫科學未來。">Decoding the Cerebellum. Designing the Future.</p>
                     <p class="hero-role">
                         <span data-en="PhD Researcher in Neurodevelopment" data-zh="神經發展學博士研究員">PhD Researcher in Neurodevelopment</span> |
@@ -1347,7 +1347,7 @@ img {
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-text">&copy; 2025 <strong>Blue Lui</strong> (LUI Ying Lam). <span data-en="All rights reserved." data-zh="版權所有。">All rights reserved.</span></p>
+                <p class="footer-text">&copy; 2025 <strong>Blue Lui</strong>. <span data-en="All rights reserved." data-zh="版權所有。">All rights reserved.</span></p>
                 <p class="footer-affiliation" data-en="PhD Candidate, School of Life Sciences, The Chinese University of Hong Kong" data-zh="香港中文大學生命科學學院博士候選人">PhD Candidate, School of Life Sciences, The Chinese University of Hong Kong</p>
             </div>
         </div>
