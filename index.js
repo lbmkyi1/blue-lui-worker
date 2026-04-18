@@ -1184,7 +1184,7 @@ img {
                 <div class="publication-card">
                     <div class="pub-year">2025</div>
                     <div class="pub-content">
-                        <h4>Lee, L. K. C., ..., <strong>Lui, Y.L.</strong>, et al. (2025). Small gold nanoparticles alleviate Huntington's disease...</h4>
+                        <h4>Lee, L. K. C., ..., <strong>Lui, Y.L.</strong>, et al. (2025). Small Gold Nanoparticles Alleviate Huntington's Disease via Modulating p38α Mitogen-Activated Protein Kinase and Pyruvate Dehydrogenase Kinase 1</h4>
                         <p class="pub-journal"><em>ACS Nano</em></p>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/41429604/" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> <span data-en="View Article" data-zh="查看文章">View Article</span></a>
                     </div>
