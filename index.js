@@ -1277,7 +1277,7 @@ img {
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="#" class="contact-link" target="_blank">
+                        <a href="https://www.researchgate.net/profile/Ying-Lam-Lui" class="contact-link" target="_blank">
                             <i class="fab fa-researchgate"></i>
                             <span>ResearchGate</span>
                         </a>
